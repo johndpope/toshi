@@ -1,0 +1,13 @@
+.DS_Store
+/*.dump
+/.bundle
+/.env
+/.ruby-version
+/.vagrant
+/BitcoindComparisonTool.*
+/bootstrap_last_offset.txt
+/config/toshi.yml
+/docs/build
+/log
+/tmp
+/vendor

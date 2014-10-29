@@ -1,0 +1,26 @@
+{
+  "name": "Toshi",
+  "description": "Bitcoin node using Ruby + PostgreSQL",
+  "website": "http://toshi.io/",
+  "repository": "https://github.com/coinbase/toshi",
+  "logo": "https://raw.githubusercontent.com/coinbase/toshi/master/lib/toshi/web/static/images/toshi_logo_gray.png",
+  "keywords": [
+    "bitcoin",
+    "node",
+    "ruby"
+  ],
+  "env": {
+    "TOSHI_NETWORK": {
+      "description": "Specifies which network to connect to (one of `bitcoin` or `testnet3`)",
+      "value": "testnet3"
+    },
+    "TOSHI_ENV": "production"
+  },
+  "addons": [
+    "heroku-postgresql",
+    "redistogo"
+  ],
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
+  }
+}
